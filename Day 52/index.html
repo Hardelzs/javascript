@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .main{
+        background: rgb(107, 107, 192);
+        width: 500px;
+        height: 400px;
+    }
+    .main-part{
+        background: rgb(206, 135, 135);
+        width: 200px;
+        height: 200px;
+        animation: display 3s ease-in-out forwards infinite alternate;
+
+    }
+    .pale{
+        background: rgb(110, 184, 110);
+        width: 500px;
+        height: 400px;
+    }
+    .pale-part{
+        background: rgb(182, 182, 99);
+        width: 200px;
+        height: 200px;
+        animation: spin 3s linear;
+        transform: rotate(-30deg);
+        transition: 2s;
+    }
+    .pale:active .pale-part{
+        transform: rotate(0);
+    }
+    /* .main:hover .main-part{
+        background: rgb(98, 167, 98);
+        animation: display 1s ease-in alternate-reverse;
+
+    } */
+    @keyframes display {
+        0%{
+            transform: translateX(0);
+            border-radius: 50%;
+        }
+        33%{
+            transform: translateY(50%);
+            background-color: rgb(107, 107, 192);
+
+        }
+        66%{
+            transform: translateX(100%) translateY(100%);
+            background-color: rgb(107, 107, 192);
+        }
+        79%{
+            background-color: rgb(107, 107, 192);
+        }
+        100%{
+            transform: translateX(100%);
+            background-color: blue;
+            /* transform: rotate(360deg); */
+        }
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="main-part">
+
+        </div>
+    </div>
+
+    <div class="pale">
+        <div class="pale-part">
+
+        </div>
+    </div>
+</body>
+</html>
