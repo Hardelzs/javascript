@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+</head>
+<style>
+    body{
+        background-color: rgb(62, 60, 60);
+        margin: 0;
+        overflow: hidden;
+    }
+    canvas{
+        display: block;
+    }
+</style>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+const canvas = document.getElementById("canvas")
+const c = canvas.getContext('2d')
+
+canvas.width = innerWidth
+canvas.height = innerHeight
+
+// Initialize speed variables
+let speedX = 5;
+let speedY = 5;
+
+let x = 11;
+let y = 11;
+
+setInterval(draw, 50);
+
+function draw() {
+  c.clearRect(0, 0, canvas.width, canvas.height);
+  c.fillStyle = 'red';
+  c.fillRect(x, y, 50, 50);
+
+  x += speedX;
+  y += speedY;
+
+  // Bounce off the walls
+  if (x + 50 >= canvas.width || x <= 0) {
+    speedX = -speedX;
+  }
+  if (y + 50 >= canvas.height || y <= 0) {
+    speedY = -speedY;
+  }
+}
+
+</script>
+</html>
