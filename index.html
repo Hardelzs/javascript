@@ -1,0 +1,699 @@
+if (error instanceof SyntaxError) {
+    showError('Unexpected response format. Please try again later.', 500);
+} else {
+    showError('Network error: ' + error.message, 500);
+}
+} finally {
+// Re-enable button and hide loading animation        
+button.disabled = false;
+btnText.style.display = 'inline';
+loader.style.display = 'none';
+}
+});
+
+// Helper function to display errors in a formatted way       
+function showError(message, statusCode) {
+const errorContainer = document.getElementById('errorContainer');
+errorContainer.innerHTML = `
+    <div class="alert alert-info" role="alert">       
+        <strong></strong> ${message}
+    </div>
+`;
+// Scroll to error container to ensure the user sees the error
+errorContainer.scrollIntoView({ behavior: 'smooth' });    
+}
+
+// Helper function to create an error container if it doesn't exist
+
+</script>
+
+
+<div b-bkqk16zms2="" class="modal modalCentered fade form-sign-in modal-part-content" id="register">
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <div b-bkqk16zms2="" class="demo-title">Register</div>
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" id="signuperrorContainer"></div> 
+<div b-bkqk16zms2="" class="tf-login-form">
+    <form id="signupForm">
+        <div b-bkqk16zms2="" class="tf-field style-1">
+            <input b-bkqk16zms2="" id="firstName" name="firstName" class="tf-field-input tf-input" placeholder=" " type="text">
+            <label b-bkqk16zms2="" class="tf-field-label" for="firstName">First name</label>
+        </div>
+        <div b-bkqk16zms2="" class="tf-field style-1">
+            <input b-bkqk16zms2="" id="lastName" name="lastName" class="tf-field-input tf-input" placeholder=" " type="text">
+            <label b-bkqk16zms2="" class="tf-field-label" for="lastName">Last name</label>
+        </div>
+        <div b-bkqk16zms2="" class="tf-field style-1">
+            <input b-bkqk16zms2="" id="lemail" name="email" class="tf-field-input tf-input" placeholder=" " type="email">   
+            <label b-bkqk16zms2="" class="tf-field-label" for="email">Email *</label>
+        </div>
+        <div b-bkqk16zms2="" class="tf-field style-1">
+            <input b-bkqk16zms2="" id="lpassword" name="password" class="tf-field-input tf-input" placeholder=" " type="password">
+            <label b-bkqk16zms2="" class="tf-field-label" for="password">Password *</label>
+        </div>
+        <div b-bkqk16zms2="" class="bottom">
+            <div b-bkqk16zms2="" class="w-100">       
+                <button b-bkqk16zms2="" type="submit" class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center">
+                    <span b-bkqk16zms2="" class="btn-text">Register</span>
+                    <span b-bkqk16zms2="" class="loader" style="display: none;">Loading...</span>
+                </button>
+            </div>
+            <div b-bkqk16zms2="" class="w-100">       
+                <a b-bkqk16zms2="" href="#login" data-bs-toggle="modal" class="btn-link fw-6 w-100 link">
+                    Already have an account? Log in here
+                    <i b-bkqk16zms2="" class="icon icon-arrow1-top-left"></i>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+<div b-bkqk16zms2="" class="modal modalCentered fade form-sign-in modal-part-content" id="moremenu">
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <div b-bkqk16zms2="" class="demo-title">Menu</div>
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" id="signuperrorContainer"></div> 
+<div b-bkqk16zms2="" class="tf-login-form">
+    <ul b-bkqk16zms2="" class="menu-list">
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/myapplications/" class="menu-link-text link text_black-2">My Job Applications</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/profile/" class="menu-link-text link text_black-2">My Profile</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/my-job-profile/" class="menu-link-text link text_black-2">My Job Profile</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/public-profile/6b1911db-a75c-4ee2-a09d-06a09cba0981/" class="menu-link-text link text_black-2">My Public Profile</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="#" class="menu-link-text link text_black-2">Get Verified (No link, includes verification badge)</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/mylistings/" class="menu-link-text link text_black-2">My Ads</a></li> 
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/chat/" class="menu-link-text link text_black-2">Chats</a></li>        
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/myfavorites/" class="menu-link-text link text_black-2">Favorites</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/mysearches/" class="menu-link-text link text_black-2">My Searches</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/car-appointments/" class="menu-link-text link text_black-2">Car Appointments (Includes new badge)</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/mybookmarks/" class="menu-link-text link text_black-2">My Bookmarks</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="/accounts/settings/" class="menu-link-text link text_black-2">Account Settings</a></li>
+        <li b-bkqk16zms2=""><a b-bkqk16zms2="" href="#" class="menu-link-text link text_black-2">Sign Out (No link)</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+document.getElementById('signupForm').addEventListener('submit', async function (event) {
+event.preventDefault();
+
+const firstName = document.getElementById('firstName').value.trim();
+const lastName = document.getElementById('lastName').value.trim();
+const email = document.getElementById('lemail').value.trim();
+const password = document.getElementById('lpassword').value.trim();
+
+// Basic form validation
+if (!firstName || !lastName || !email || !password) {     
+showError('All fields are required. Please fill in all fields.', 400);
+return;
+}
+
+const data = {
+firstName: firstName,
+lastName: lastName,
+email: email,
+password: password,
+isActive: true
+};
+
+const button = event.target.querySelector('button');      
+const btnText = button.querySelector('.btn-text');        
+const loader = button.querySelector('.loader');
+
+// Disable button and show loading animation
+button.disabled = true;
+btnText.style.display = 'none';
+loader.style.display = 'inline-block';
+
+try {
+const response = await fetch('/api/User/SignUp', {    
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+});
+
+const result = await response.json();
+
+switch (response.status) {
+    case 200:
+        showresponse(result.Message || 'User created successfully!');
+        document.getElementById('signupForm').reset();
+
+        break;
+        break;
+    case 400:
+        showresponse(result.Message || 'Invalid user data provided.', response.status);
+        break;
+    case 409:
+        showresponse(result.Message || 'User already exists.', response.status);
+        break;
+    case 500:
+        showresponse(result.Message || 'An unexpected error occurred. Please try again later.', response.status);
+        break;
+    default:
+        showresponse('An unknown error occurred. Please contact support.', response.status);
+}
+} catch (error) {
+// Handle network errors
+console.error('Network error:', error);
+showError('Network error: ' + error.message, 500);    
+} finally {
+// Re-enable button and hide loading animation        
+button.disabled = false;
+btnText.style.display = 'inline';
+loader.style.display = 'none';
+}
+});
+
+// Helper function to display errors in a formatted way       
+function showresponse(message, statusCode) {
+const errorContainer = document.getElementById('signuperrorContainer') || createErrorContainer();
+errorContainer.innerHTML = `
+            <div class="alert alert-info" role="alert">
+<strong>Info </strong> ${message}
+</div>
+
+`;
+// Scroll to error container to make sure user sees the error
+errorContainer.scrollIntoView({ behavior: 'smooth' });    
+}
+
+
+</script>
+<!-- modalDemo -->
+<div b-bkqk16zms2="" class="modal fade modalDemo" id="modalDemo"> 
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <h5 b-bkqk16zms2="" class="demo-title">Hello, what are you listing today?</h5>
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" class="mega-menu">
+    <div b-bkqk16zms2="" class="container">
+        <div b-bkqk16zms2="" class="row">
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Motor/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/motor.png" src="/images/cat/motor.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Motor/Add" class="">Motors</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Job/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/job.png" src="/images/cat/job.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Job/Add" class="">Post a Job Vacancy</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Property/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/cate.png" src="/images/cat/cate.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Property/Add" class="">Post Property</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Property/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/cate.png" src="/images/cat/cate.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Property/Add" class="">Property for Rent</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Community/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/community.png" src="/images/cat/community.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Community/Add" class="">Community</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="col-xl-4 col-md-6 col-12">
+                <div b-bkqk16zms2="" class="blog-article-item">
+                    <div b-bkqk16zms2="" class="article-thumb">
+                        <a b-bkqk16zms2="" href="/Classified/Add">
+                            <img b-bkqk16zms2="" class=" ls-is-cached lazyloaded" data-src="/images/cat/classified.png" src="/images/cat/classified.png" alt="img-blog">
+                        </a>
+
+                    </div>
+                    <div b-bkqk16zms2="" class="article-content">
+                        <div b-bkqk16zms2="" class="article-title">
+                            <a b-bkqk16zms2="" href="/Classified/Add" class="">Classified</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- /modalDemo -->
+
+
+
+<!-- /modal login -->
+<!-- modal compare -->
+<div b-bkqk16zms2="" class="offcanvas offcanvas-bottom canvas-compare" id="compare">
+<div b-bkqk16zms2="" class="canvas-wrapper">
+<header class="canvas-header">
+<div b-bkqk16zms2="" class="close-popup">
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>        
+</div>
+</header>
+<div b-bkqk16zms2="" class="canvas-body">
+<div b-bkqk16zms2="" class="container">
+    <div b-bkqk16zms2="" class="row">
+        <div b-bkqk16zms2="" class="col-12">
+            <div b-bkqk16zms2="" class="tf-compare-list">
+                <div b-bkqk16zms2="" class="tf-compare-head">
+                    <div b-bkqk16zms2="" class="title">Compare Products</div>
+                </div>
+                <div b-bkqk16zms2="" class="tf-compare-offcanvas">
+                    <div b-bkqk16zms2="" class="tf-compare-item">
+                        <div b-bkqk16zms2="" class="position-relative">
+                            <div b-bkqk16zms2="" class="icon">
+                                <i b-bkqk16zms2="" class="icon-close"></i>
+                            </div>
+                            <a b-bkqk16zms2="" href="product-detail.html">
+                                <img b-bkqk16zms2="" class="radius-3" src="/images/products/orange-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div b-bkqk16zms2="" class="tf-compare-item">
+                        <div b-bkqk16zms2="" class="position-relative">
+                            <div b-bkqk16zms2="" class="icon">
+                                <i b-bkqk16zms2="" class="icon-close"></i>
+                            </div>
+                            <a b-bkqk16zms2="" href="product-detail.html">
+                                <img b-bkqk16zms2="" class="radius-3" src="/images/products/pink-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div b-bkqk16zms2="" class="tf-compare-buttons">
+                    <div b-bkqk16zms2="" class="tf-compare-buttons-wrap">
+                        <a b-bkqk16zms2="" href="compare.html" class="tf-btn radius-3 btn-fill justify-content-center fw-6 fs-14 flex-grow-1 animate-hover-btn ">Compare</a>
+                        <div b-bkqk16zms2="" class="tf-compapre-button-clear-all link">
+                            Clear All
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- /modal compare -->
+<!-- modal quick_add -->
+<div b-bkqk16zms2="" class="modal fade modalDemo" id="quick_add"> 
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" class="wrap">
+    <div b-bkqk16zms2="" class="tf-product-info-item">
+        <div b-bkqk16zms2="" class="image">
+            <img b-bkqk16zms2="" src="/images/products/orange-1.jpg" alt="">
+        </div>
+        <div b-bkqk16zms2="" class="content">
+            <a b-bkqk16zms2="" href="product-detail.html">Ribbed Tank Top</a>
+            <div b-bkqk16zms2="" class="tf-product-info-price">
+                <!-- <div class="price-on-sale">$8.00</div>
+                <div class="compare-at-price">$10.00</div>
+                <div class="badges-on-sale"><span>20</span>% OFF</div> -->
+                <div b-bkqk16zms2="" class="price">$18.00</div>
+            </div>
+        </div>
+    </div>
+    <div b-bkqk16zms2="" class="tf-product-info-variant-picker mb_15">
+        <div b-bkqk16zms2="" class="variant-picker-item">
+            <div b-bkqk16zms2="" class="variant-picker-label">
+                Color: <span b-bkqk16zms2="" class="fw-6 variant-picker-label-value">Orange</span>
+            </div>
+            <div b-bkqk16zms2="" class="variant-picker-values">
+                <input b-bkqk16zms2="" id="values-orange" type="radio" name="color" checked="">
+                <label b-bkqk16zms2="" class="hover-tooltip radius-60" for="values-orange" data-value="Orange">
+                    <span b-bkqk16zms2="" class="btn-checkbox bg-color-orange"></span>
+                    <span b-bkqk16zms2="" class="tooltip">Orange</span>
+                </label>
+                <input b-bkqk16zms2="" id="values-black" type="radio" name="color">
+                <label b-bkqk16zms2="" class=" hover-tooltip radius-60" for="values-black" data-value="Black">
+                    <span b-bkqk16zms2="" class="btn-checkbox bg-color-black"></span>
+                    <span b-bkqk16zms2="" class="tooltip">Black</span>
+                </label>
+                <input b-bkqk16zms2="" id="values-white" type="radio" name="color">
+                <label b-bkqk16zms2="" class="hover-tooltip radius-60" for="values-white" data-value="White">
+                    <span b-bkqk16zms2="" class="btn-checkbox bg-color-white"></span>
+                    <span b-bkqk16zms2="" class="tooltip">White</span>
+                </label>
+            </div>
+        </div>
+        <div b-bkqk16zms2="" class="variant-picker-item">
+            <div b-bkqk16zms2="" class="variant-picker-label">
+                Size: <span b-bkqk16zms2="" class="fw-6 variant-picker-label-value">S</span>
+            </div>
+            <div b-bkqk16zms2="" class="variant-picker-values">
+                <input b-bkqk16zms2="" type="radio" name="size" id="values-s" checked="">
+                <label b-bkqk16zms2="" class="style-text" for="values-s" data-value="S">
+                    <p b-bkqk16zms2="">S</p>
+                </label>
+                <input b-bkqk16zms2="" type="radio" name="size" id="values-m">
+                <label b-bkqk16zms2="" class="style-text" for="values-m" data-value="M">
+                    <p b-bkqk16zms2="">M</p>
+                </label>
+                <input b-bkqk16zms2="" type="radio" name="size" id="values-l">
+                <label b-bkqk16zms2="" class="style-text" for="values-l" data-value="L">
+                    <p b-bkqk16zms2="">L</p>
+                </label>
+                <input b-bkqk16zms2="" type="radio" name="size" id="values-xl">
+                <label b-bkqk16zms2="" class="style-text" for="values-xl" data-value="XL">
+                    <p b-bkqk16zms2="">XL</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div b-bkqk16zms2="" class="tf-product-info-quantity mb_15">
+        <div b-bkqk16zms2="" class="quantity-title fw-6">Quantity</div>
+        <div b-bkqk16zms2="" class="wg-quantity">     
+            <span b-bkqk16zms2="" class="btn-quantity minus-btn">-</span>
+            <input b-bkqk16zms2="" type="text" name="number" value="1">
+            <span b-bkqk16zms2="" class="btn-quantity plus-btn">+</span>
+        </div>
+    </div>
+    <div b-bkqk16zms2="" class="tf-product-info-buy-button">
+        <form class="">
+            <a b-bkqk16zms2="" href="#" class="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn "><span b-bkqk16zms2="">Add to cart -&nbsp;</span><span b-bkqk16zms2="" class="tf-qty-price">$18.00</span></a>
+            <div b-bkqk16zms2="" class="tf-product-btn-wishlist btn-icon-action">
+                <i b-bkqk16zms2="" class="icon-heart"></i>
+                <i b-bkqk16zms2="" class="icon-delete"></i>
+            </div>
+            <a b-bkqk16zms2="" href="#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="tf-product-btn-wishlist box-icon bg_white compare btn-icon-action">
+                <span b-bkqk16zms2="" class="icon icon-compare"></span>
+                <span b-bkqk16zms2="" class="icon icon-check"></span>
+            </a>
+            <div b-bkqk16zms2="" class="w-100">       
+                <a b-bkqk16zms2="" href="#" class="btns-full">Buy with <img b-bkqk16zms2="" src="/images/payments/paypal.png" alt=""></a>
+                <a b-bkqk16zms2="" href="#" class="payment-more-option">More payment options</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- /modal quick_add -->
+<!-- modal quick_view -->
+<div b-bkqk16zms2="" class="modal fade modalDemo" id="quick_view">
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" class="wrap">
+    <div b-bkqk16zms2="" class="tf-product-media-wrap">
+        <div b-bkqk16zms2="" class="swiper tf-single-slide">
+            <div b-bkqk16zms2="" class="swiper-wrapper">
+                <div b-bkqk16zms2="" class="swiper-slide">
+                    <div b-bkqk16zms2="" class="item">
+                        <img b-bkqk16zms2="" src="/images/products/orange-1.jpg" alt="">
+                    </div>
+                </div>
+                <div b-bkqk16zms2="" class="swiper-slide">
+                    <div b-bkqk16zms2="" class="item">
+                        <img b-bkqk16zms2="" src="/images/products/pink-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="swiper-button-next button-style-arrow single-slide-prev"></div>
+            <div b-bkqk16zms2="" class="swiper-button-prev button-style-arrow single-slide-next"></div>
+        </div>
+    </div>
+    <div b-bkqk16zms2="" class="tf-product-info-wrap position-relative">
+        <div b-bkqk16zms2="" class="tf-product-info-list">
+            <div b-bkqk16zms2="" class="tf-product-info-title">
+                <h5 b-bkqk16zms2=""><a b-bkqk16zms2="" class="link" href="product-detail.html">Ribbed Tank Top</a></h5>     
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-info-badges">
+                <div b-bkqk16zms2="" class="badges text-uppercase">Best seller</div>
+                <div b-bkqk16zms2="" class="product-status-content">
+                    <i b-bkqk16zms2="" class="icon-lightning"></i>
+                    <p b-bkqk16zms2="" class="fw-6">Selling fast! 48 people have this in their carts.</p>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-info-price">
+                <div b-bkqk16zms2="" class="price">$18.00</div>
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-description">
+                <p b-bkqk16zms2="">Nunc arcu faucibus a et lorem eu a mauris adipiscing conubia ac aptent ligula facilisis a auctor habitant parturient a a.Interdum fermentum.</p>
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-info-variant-picker">
+                <div b-bkqk16zms2="" class="variant-picker-item">
+                    <div b-bkqk16zms2="" class="variant-picker-label">
+                        Color: <span b-bkqk16zms2="" class="fw-6 variant-picker-label-value">Orange</span>
+                    </div>
+                    <div b-bkqk16zms2="" class="variant-picker-values">
+                        <input b-bkqk16zms2="" id="values-orange-1" type="radio" name="color-1" checked="">
+                        <label b-bkqk16zms2="" class="hover-tooltip radius-60" for="values-orange-1" data-value="Orange">   
+                            <span b-bkqk16zms2="" class="btn-checkbox bg-color-orange"></span>
+                            <span b-bkqk16zms2="" class="tooltip">Orange</span>
+                        </label>
+                        <input b-bkqk16zms2="" id="values-black-1" type="radio" name="color-1">
+                        <label b-bkqk16zms2="" class=" hover-tooltip radius-60" for="values-black-1" data-value="Black">    
+                            <span b-bkqk16zms2="" class="btn-checkbox bg-color-black"></span>
+                            <span b-bkqk16zms2="" class="tooltip">Black</span>
+                        </label>
+                        <input b-bkqk16zms2="" id="values-white-1" type="radio" name="color-1">
+                        <label b-bkqk16zms2="" class="hover-tooltip radius-60" for="values-white-1" data-value="White">     
+                            <span b-bkqk16zms2="" class="btn-checkbox bg-color-white"></span>
+                            <span b-bkqk16zms2="" class="tooltip">White</span>
+                        </label>
+                    </div>
+                </div>
+                <div b-bkqk16zms2="" class="variant-picker-item">
+                    <div b-bkqk16zms2="" class="d-flex justify-content-between align-items-center">
+                        <div b-bkqk16zms2="" class="variant-picker-label">
+                            Size: <span b-bkqk16zms2="" class="fw-6 variant-picker-label-value">S</span>
+                        </div>
+                        <div b-bkqk16zms2="" class="find-size btn-choose-size fw-6">Find your size</div>
+                    </div>
+                    <div b-bkqk16zms2="" class="variant-picker-values">
+                        <input b-bkqk16zms2="" type="radio" name="size-1" id="values-s-1" checked="">
+                        <label b-bkqk16zms2="" class="style-text" for="values-s-1" data-value="S">
+                            <p b-bkqk16zms2="">S</p>  
+                        </label>
+                        <input b-bkqk16zms2="" type="radio" name="size-1" id="values-m-1">
+                        <label b-bkqk16zms2="" class="style-text" for="values-m-1" data-value="M">
+                            <p b-bkqk16zms2="">M</p>  
+                        </label>
+                        <input b-bkqk16zms2="" type="radio" name="size-1" id="values-l-1">
+                        <label b-bkqk16zms2="" class="style-text" for="values-l-1" data-value="L">
+                            <p b-bkqk16zms2="">L</p>  
+                        </label>
+                        <input b-bkqk16zms2="" type="radio" name="size-1" id="values-xl-1">
+                        <label b-bkqk16zms2="" class="style-text" for="values-xl-1" data-value="XL">
+                            <p b-bkqk16zms2="">XL</p> 
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-info-quantity">
+                <div b-bkqk16zms2="" class="quantity-title fw-6">Quantity</div>
+                <div b-bkqk16zms2="" class="wg-quantity">
+                    <span b-bkqk16zms2="" class="btn-quantity minus-btn">-</span>
+                    <input b-bkqk16zms2="" type="text" name="number" value="1">
+                    <span b-bkqk16zms2="" class="btn-quantity plus-btn">+</span>
+                </div>
+            </div>
+            <div b-bkqk16zms2="" class="tf-product-info-buy-button">
+                <form class="">
+                    <a b-bkqk16zms2="" href="#" class="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn "><span b-bkqk16zms2="">Add to cart -&nbsp;</span><span b-bkqk16zms2="" class="tf-qty-price">$8.00</span></a>
+                    <a b-bkqk16zms2="" href="javascript:void(0);" class="tf-product-btn-wishlist hover-tooltip box-icon bg_white wishlist btn-icon-action">
+                        <span b-bkqk16zms2="" class="icon icon-heart"></span>
+                        <span b-bkqk16zms2="" class="tooltip">Add to Wishlist</span>
+                        <span b-bkqk16zms2="" class="icon icon-delete"></span>
+                    </a>
+                    <a b-bkqk16zms2="" href="#compare" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="tf-product-btn-wishlist hover-tooltip box-icon bg_white compare btn-icon-action">
+                        <span b-bkqk16zms2="" class="icon icon-compare"></span>
+                        <span b-bkqk16zms2="" class="tooltip">Add to Compare</span>
+                        <span b-bkqk16zms2="" class="icon icon-check"></span>
+                    </a>
+                    <div b-bkqk16zms2="" class="w-100">
+                        <a b-bkqk16zms2="" href="#" class="btns-full">Buy with <img b-bkqk16zms2="" src="/images/payments/paypal.png" alt=""></a>
+                        <a b-bkqk16zms2="" href="#" class="payment-more-option">More payment options</a>
+                    </div>
+                </form>
+            </div>
+            <div b-bkqk16zms2="">
+                <a b-bkqk16zms2="" href="product-detail.html" class="tf-btn fw-6 btn-line">View full details<i b-bkqk16zms2="" class="icon icon-arrow1-top-left"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- /modal quick_view -->
+<!-- modal find_size -->
+<div b-bkqk16zms2="" class="modal fade modalDemo tf-product-modal" id="find_size">
+<div b-bkqk16zms2="" class="modal-dialog modal-dialog-centered">
+<div b-bkqk16zms2="" class="modal-content">
+<div b-bkqk16zms2="" class="header">
+    <div b-bkqk16zms2="" class="demo-title">Size chart</div>
+    <span b-bkqk16zms2="" class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+</div>
+<div b-bkqk16zms2="" class="tf-rte">
+    <div b-bkqk16zms2="" class="tf-table-res-df">     
+        <h6 b-bkqk16zms2="">Size guide</h6>
+        <table b-bkqk16zms2="" class="tf-sizeguide-table">
+            <thead>
+                <tr b-bkqk16zms2="">
+                    <th b-bkqk16zms2="">Size</th>     
+                    <th b-bkqk16zms2="">US</th>       
+                    <th b-bkqk16zms2="">Bust</th>     
+                    <th b-bkqk16zms2="">Waist</th>    
+                    <th b-bkqk16zms2="">Low Hip</th>  
+                </tr>
+            </thead>
+            <tbody b-bkqk16zms2="">
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">XS</td>       
+                    <td b-bkqk16zms2="">2</td>        
+                    <td b-bkqk16zms2="">32</td>       
+                    <td b-bkqk16zms2="">24 - 25</td>  
+                    <td b-bkqk16zms2="">33 - 34</td>  
+                </tr>
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">S</td>        
+                    <td b-bkqk16zms2="">4</td>        
+                    <td b-bkqk16zms2="">34 - 35</td>  
+                    <td b-bkqk16zms2="">26 - 27</td>  
+                    <td b-bkqk16zms2="">35 - 26</td>  
+                </tr>
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">M</td>        
+                    <td b-bkqk16zms2="">6</td>        
+                    <td b-bkqk16zms2="">36 - 37</td>  
+                    <td b-bkqk16zms2="">28 - 29</td>  
+                    <td b-bkqk16zms2="">38 - 40</td>  
+                </tr>
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">L</td>        
+                    <td b-bkqk16zms2="">8</td>        
+                    <td b-bkqk16zms2="">38 - 29</td>  
+                    <td b-bkqk16zms2="">30 - 31</td>  
+                    <td b-bkqk16zms2="">42 - 44</td>  
+                </tr>
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">XL</td>       
+                    <td b-bkqk16zms2="">10</td>       
+                    <td b-bkqk16zms2="">40 - 41</td>  
+                    <td b-bkqk16zms2="">32 - 33</td>  
+                    <td b-bkqk16zms2="">45 - 47</td>  
+                </tr>
+                <tr b-bkqk16zms2="">
+                    <td b-bkqk16zms2="">XXL</td>      
+                    <td b-bkqk16zms2="">12</td>       
+                    <td b-bkqk16zms2="">42 - 43</td>  
+                    <td b-bkqk16zms2="">34 - 35</td>  
+                    <td b-bkqk16zms2="">48 - 50</td>  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div b-bkqk16zms2="" class="tf-page-size-chart-content">
+        <div b-bkqk16zms2="">
+            <h6 b-bkqk16zms2="">Measuring Tips</h6>   
+            <div b-bkqk16zms2="" class="title">Bust</div>
+            <p b-bkqk16zms2="">Measure around the fullest part of your bust.</p>
+            <div b-bkqk16zms2="" class="title">Waist</div>
+            <p b-bkqk16zms2="">Measure around the narrowest part of your torso.</p>
+            <div b-bkqk16zms2="" class="title">Low Hip</div>
+            <p b-bkqk16zms2="" class="mb-0">
+                With your feet together measure around the fullest part of your hips/rear.
+            </p>
+        </div>
+        <div b-bkqk16zms2="">
+            <img b-bkqk16zms2="" class="sizechart lazyload" data-src="/images/shop/products/size_chart2.jpg" src="/images/shop/products/size_chart2.jpg" alt="">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- /modal find_size -->
+<!-- Javascript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>  
+<script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="/js/carousel.js"></script>    
+<script type="text/javascript" src="/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/js/lazysize.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/js/count-down.js"></script>  
+<script type="text/javascript" src="/js/wow.min.js"></script>     
+<script type="text/javascript" src="/js/multiple-modal.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>        
+
+<script nws-csp-add-nonce="true">'serviceWorker'in navigator&&navigator.serviceWorker.register('/serviceworker', { scope: '/' })</script>
