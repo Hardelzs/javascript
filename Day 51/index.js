@@ -1,4 +1,4 @@
-let slider = document.querySelector('.slider')
+let slider = document.querySelector('#slider')
 let nextBtn = document.getElementById('next')
 let prevBtn = document.getElementById('prev')
 
@@ -10,5 +10,4 @@ nextBtn.onclick = () => {
 prevBtn.onclick = () => {
    slider.prepend( slider.querySelector('img:last-child'));
    console.log('slider', slider);
-   
 }
