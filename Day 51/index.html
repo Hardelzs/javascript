@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    #slider img:not(img:first-child){
-    display: none;
-}
-</style>
+
 <body>
+
     <div id="slider">
         <img src="images/images12.jpeg" alt="">
         <img src="images/images11.jpeg" alt="">
         <img src="images/images6.jpeg" alt="">
     </div>
-    <div>
-        <div id="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
+
+    <div id="arrows">
+        <button id="prev">
+            < </button>
+                <button id="next">
+                    >
+                </button>
     </div>
+    <script src="index.js">
 
-    <script>
-        let slider =document.querySelector('.slider')
-let nextBtn =document.getElementById('next')
-let prevBtn =document.getElementById('prev')
-
-nextBtn.onclick = () => {
-   slider.append( slider.querySelector('img:first-child'));
-}
-prevBtn.onclick = () => {
-   slider.prepend( slider.querySelector('img:last-child'));
-}
     </script>
 </body>
+
 </html>
