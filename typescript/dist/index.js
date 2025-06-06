@@ -1,10 +1,9 @@
 "use strict";
-var Size;
-(function (Size) {
-    Size[Size["small"] = 1] = "small";
-    Size[Size["medium"] = 2] = "medium";
-    Size[Size["large"] = 3] = "large";
-})(Size || (Size = {}));
-let muSize = Size.medium;
-console.log(muSize);
+function calculateTax(income, tasyear) {
+    if (tasyear < 2022)
+        return income * 1.2;
+    return income * 1.5;
+}
+const total = calculateTax(1000, 2022);
+console.log(total);
 //# sourceMappingURL=index.js.map
