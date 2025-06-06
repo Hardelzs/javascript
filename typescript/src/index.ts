@@ -1,4 +1,7 @@
-let age: number = 20;
-if (age == 50)
-    age +=  10;
-console.log(age);
+
+
+// PasCalCase
+enum Size { small = 1, medium, large }
+let muSize:Size = Size.medium
+console.log(muSize);
+
