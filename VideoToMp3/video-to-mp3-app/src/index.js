@@ -1,9 +1,9 @@
 import { convertVideoToMp3 } from './utils/converter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const fileInput = document.getElementById('file-input');
-    const convertButton = document.getElementById('convert-button');
-    const statusDisplay = document.getElementById('status-display');
+    const fileInput = document.getElementById('videoInput');
+    const convertButton = document.getElementById('convertButton');
+    const statusDisplay = document.getElementById('status');
 
     convertButton.addEventListener('click', async () => {
         const file = fileInput.files[0];
@@ -20,4 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             statusDisplay.textContent = `Error: ${error.message}`;
         }
     });
+
+    console.log('covertButton');
+    
 });

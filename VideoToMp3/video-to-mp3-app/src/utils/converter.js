@@ -22,7 +22,6 @@ async function convertVideoToMp3(videoUrl) {
     }
 
     const data = await response.json();
-    // The response will contain details about the job; you may need to poll for completion and get the MP3 URL
     return data;
 }
 
