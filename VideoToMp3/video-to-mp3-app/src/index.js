@@ -1,5 +1,3 @@
-// filepath: c:\Users\adewa\vscode\javascript\VideoToMp3\video-to-mp3-app\src\index.js
-
 import { convertVideoToMp3 } from './utils/converter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
