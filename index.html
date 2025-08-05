@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="firstname"> <br> <br>
+
+    <input type="text" id="secondname"> <br> <br>
+
+    <input type="password" id="password" >
+
+    <button id="Submit" >Submit</button> <br> <br>
+   <span>Message: <h1 id="Message"></h1></span> 
+
+
+
+    <script>
+    const firstnamein = document.getElementById("firstname");
+    const secondnamein = document.getElementById("secondname");
+    const passwordin = document.getElementById("password");
+    const submit = document.getElementById("Submit");
+    const message = document.getElementById("Message");
+
+    submit.addEventListener("click", () => {
+        const firstname = firstnamein.value.trim();
+        const secondname = secondnamein.value.trim();
+        const password = passwordin.value;
+
+        if (firstname == "Adewale" && secondname === "hardelz" && password === "1234") {
+            message.textContent = "Welcome Master";
+            console.log("Welcome Master");
+            
+        } else {
+            message.textContent = "Fuck off man";
+            console.log("fuck off man");
+            
+        }
+
+        console.log("Hello boy");
+    });
+
+
+        
+    </script>
+</body>
+</html>
