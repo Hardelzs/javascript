@@ -7,6 +7,6 @@ export let options = {
 };
 
 export default function () {
-  http.get('https://keyrush-kappa.vercel.app/');
+  http.get('https://ledstagelightmfg.com/');
   sleep(1);
 }
