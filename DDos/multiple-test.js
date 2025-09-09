@@ -1,17 +1,35 @@
-import http from "k6/http"
-import { sleep } from "k6"
+import http from "k6/http";
+import { sleep } from "k6";
 
 export let options = {
   stages: [
-    { duration: '10s', target: 3000 },   // Light load (3 users)
-    { duration: '20s', target: 10000 },  // Moderate load (10 users)
-    { duration: '30s', target: 5000 },  // Heavy load (50 users)
-    { duration: '10s', target: 9000 },   // Ramp down (back to 0)
+    { duration: "30s", target: 100 },
+    { duration: "30s", target: 500 },
+    { duration: "30s", target: 1000 },
+    { duration: "30s", target: 2000 },
+    { duration: "30s", target: 3000 },
+    { duration: "30s", target: 4000 },
+    { duration: "30s", target: 5000 },
+    { duration: "30s", target: 6000 },
+    { duration: "30s", target: 7000 },
+    { duration: "30s", target: 8000 },
+    { duration: "30s", target: 10000 }, 
+    { duration: "30s", target: 1000 }, 
+    { duration: "30s", target: 1000 }, 
+    { duration: "30s", target: 1000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    { duration: "30s", target: 9000 }, 
+    // 🚀 keep adding more if needed
   ],
-}
+};
 
 export default function () {
-  http.get('https://mfgdisco.com/')
-  http.get('https://ledstagelightmfg.com/')
-  sleep(1)
+  http.get("157.173.209.142"); // 👈 replace with your site
+  sleep(1);
 }
