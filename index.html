@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Login & Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+    }
+    #error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <input type="text" id="firstname"> <br> <br>
+  <h2>Login</h2>
+  <input type="text" id="loginUsername" placeholder="Username">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button onclick="login()">Login</button>
 
-    <input type="text" id="secondname"> <br> <br>
+  <h2>Create Account</h2>
+  <input type="text" id="signupUsername" placeholder="Username">
+  <input type="password" id="signupPassword" placeholder="Password">
+  <button onclick="signup()">Create Account</button>
 
-    <input type="password" id="password" >
+  <p id="error"></p>
 
-    <button id="Submit" >Submit</button> <br> <br>
-   <span>Message: <h1 id="Message"></h1></span> 
+  <script>
+    function callApi(endpoint, data) {
+      const url = endpoint === "Login"
+        ? "https://queueless-7el4.onrender.com/api/v1/login"
+        : "https://queueless-7el4.onrender.com/api/v1/signup";
 
-
-
-    <script>
-    const firstnamein = document.getElementById("firstname");
-    const secondnamein = document.getElementById("secondname");
-    const passwordin = document.getElementById("password");
-    const submit = document.getElementById("Submit");
-    const message = document.getElementById("Message");
-
-    submit.addEventListener("click", () => {
-        const firstname = firstnamein.value.trim();
-        const secondname = secondnamein.value.trim();
-        const password = passwordin.value;
-
-        if (firstname == "Adewale" && secondname === "hardelz" && password === "1234") {
-            message.textContent = "Welcome Master";
-            console.log("Welcome Master");
-            
-        } else {
-            message.textContent = "Fuck off man";
-            console.log("fuck off man");
-            
+      return fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.json().then(err => Promise.reject(err.message || "Unknown error"));
         }
+        return response.json();
+      });
+    }
 
-        console.log("Hello boy");
-    });
+    function login() {
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+      document.getElementById("error").textContent = "";
 
+      callApi("Login", { username, password })
+        .then(response => {
+          localStorage.setItem("authToken", response.data.token);
+          localStorage.setItem("username", response.data.username);
+          window.location.href = "dashboard.html"; // Redirect to dashboard
+        })
+        .catch(error => {
+          document.getElementById("error").textContent = error;
+        });
+    }
 
-        
-    </script>
+    function signup() {
+      const username = document.getElementById("signupUsername").value;
+      const password = document.getElementById("signupPassword").value;
+      document.getElementById("error").textContent = "";
+
+      callApi("Signup", { username, password })
+        .then(response => alert(response.message))
+        .catch(error => document.getElementById("error").textContent = error);
+    }
+  </script>
 </body>
 </html>

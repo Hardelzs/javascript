@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <baby>
-    <h1>
-        baby
-    </h1>
-    <yellow>
-        mommy
-    </yellow> <br> <br>
-
-    <red>
-        daddy
-    </red> <br> <br>
-
-
-    <green>
-        everybody
-    </green>
-</baby>
 </head>
+<body>
+    <section>
+    <h1>Yellow</h1>
+    <p>Yellow is the color of sunshine. It's associated with joy, happiness, intellect
+    </section>
+</body>
+<style>
+    section {
+        background-color: yellow;
+        padding: 20px;
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+    }
+    section{
+        filter: hue-rotate(150deg);
+        background-position: cdnter;
+        border-radius: 10px;
+    }
+    section.hover{
+        background-position: 80%;
+        transform: rotate3d(30deg);
+    }
+</style>
 </html>
-
